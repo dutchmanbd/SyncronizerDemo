@@ -12,7 +12,7 @@ package syncronizerdemo.db.model;
 public class Category {
     private int id;
     private String name;
-    private String type;
+    private double type;
     private int itemId;
 
     public int getId() {
@@ -31,11 +31,11 @@ public class Category {
         this.name = name;
     }
 
-    public String getType() {
+    public double getType() {
         return type;
     }
 
-    public void setType(String type) {
+    public void setType(double type) {
         this.type = type;
     }
 
@@ -46,6 +46,12 @@ public class Category {
     public void setItemId(int itemId) {
         this.itemId = itemId;
     }
+
+    @Override
+    public String toString() {
+        return "Category{" + "id=" + id + ", name=" + name + ", type=" + type + ", itemId=" + itemId + '}';
+    }
+    
     
     
 }
